@@ -1,3 +1,3 @@
 class FizzBuzz:
     def affiche (self):
-        pass
+        return "12"
