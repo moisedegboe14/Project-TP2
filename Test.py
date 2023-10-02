@@ -8,8 +8,8 @@ def affiche():
         if i % 5 == 0:
             output += "Buzz"
         if not output:
-            output = i  # Si ce n'est ni un multiple de 3 ni de 5, affiche simplement le nombre
+            output = i  
         print(output)
 
-# Appel de la méthode pour afficher les résultats
+
 affiche()
