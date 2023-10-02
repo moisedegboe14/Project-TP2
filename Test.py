@@ -1,19 +1,15 @@
 import unittest
 
-def affiche(n):
-    result = []
-    for i in range(1, n + 1):
+def affiche():
+    for i in range(1, 101):
         output = ""
         if i % 3 == 0:
             output += "Fizz"
         if i % 5 == 0:
             output += "Buzz"
         if not output:
-            output = i
-        result.append(output)
-    return result
+            output = i  # Si ce n'est ni un multiple de 3 ni de 5, affiche simplement le nombre
+        print(output)
 
-n = 100 
-results = affiche(n)
-for item in results:
-    print(item)
+# Appel de la méthode pour afficher les résultats
+affiche()
